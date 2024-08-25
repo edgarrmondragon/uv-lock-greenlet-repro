@@ -25,4 +25,4 @@ jobs:
         allow-prereleases: true
     - uses: hynek/setup-cached-uv@v2
     - run: |
-        uv run --python python${{ matrix.python-version }} pytest
+        uv run --verbose --python python${{ matrix.python-version }} pytest
